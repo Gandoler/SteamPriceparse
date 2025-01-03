@@ -7,7 +7,7 @@ namespace Httpclient.AppSettings;
 public class ConnectionStringManager
 {
     static RootConfig rootConfig = new();
-    static string ConfigFilePath => Path.Combine(AppContext.BaseDirectory, "appsettings.json");
+    static string ConfigFilePath => "appsettings.json";
     static ConnectionStringManager()
     {
         GoDeserialiseObject();

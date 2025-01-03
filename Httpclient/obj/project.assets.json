@@ -2960,7 +2960,6 @@
       "packagesPath": "/Users/gl.krutoimail.ru/.nuget/packages/",
       "outputPath": "/Users/gl.krutoimail.ru/RiderProjects/Solution1/Httpclient/obj/",
       "projectStyle": "PackageReference",
-      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
         "/Users/gl.krutoimail.ru/.nuget/NuGet/NuGet.Config"
       ],
@@ -2968,7 +2967,6 @@
         "net9.0"
       ],
       "sources": {
-        "/Users/gl.krutoimail.ru/.dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2985,8 +2983,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
-      }
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -3035,7 +3034,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/gl.krutoimail.ru/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

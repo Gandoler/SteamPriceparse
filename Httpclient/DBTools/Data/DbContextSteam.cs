@@ -1,6 +1,7 @@
 using Dbtools.models;
 using Httpclient.AppSettings;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace Dbtools.Data;
 
@@ -9,7 +10,10 @@ public class DbContextSteam: DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         base.OnConfiguring(optionsBuilder);
-        optionsBuilder.UseMySql(ConnectionStringManager.GetConnectionString()
+        string connectionString= ConnectionStringManager.GetConnectionString();
+        Log.Information("Connecting to Steam"+
+                        " with connection string {connectionString}");
+        optionsBuilder.UseMySql(connectionString
         , ServerVersion.AutoDetect(ConnectionStringManager.GetConnectionString()));
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)

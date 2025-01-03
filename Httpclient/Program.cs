@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Dbtools.Data;
 using Httpclient;
 using Newtonsoft.Json;
 using Serilog;
@@ -11,11 +12,15 @@ public class Program
 
     public static async Task Main(string[] args)
     { 
+        
         Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Debug()  
-            .WriteTo.File("log.txt", rollingInterval: RollingInterval.Hour) 
+            
+            .WriteTo.File("/Users/gl.krutoimail.ru/RiderProjects/Solution1/Httpclient/logs/log.log", rollingInterval: RollingInterval.Hour) 
             .CreateLogger();
-
+        Log.Information("Starting App\n" +
+                        "#######################");
+        
         string appId = "730"; 
         string marketHashName = "AK-47 | Redline (Field-Tested)";
         GetItemPriceClass getItemPriceClass = new GetItemPriceClass();
@@ -33,6 +38,13 @@ public class Program
         {
             Console.WriteLine("Ошибка получения данных.");
         }
+
+        using (var db = new DbContextSteam())
+        {
+            // Убедись, что база данных создана
+            await db.Database.EnsureCreatedAsync();
+        }
+
     }
 
     
