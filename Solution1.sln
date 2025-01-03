@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{BD7ABBC2-DBF2-43DC-B5FB-F7A0C889CE93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Httpclient", "Httpclient\Httpclient.csproj", "{BD7ABBC2-DBF2-43DC-B5FB-F7A0C889CE93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
