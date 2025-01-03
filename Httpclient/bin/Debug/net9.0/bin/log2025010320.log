@@ -1,0 +1,17 @@
+2025-01-03 20:50:38.740 +03:00 [INF] Starting App
+#######################
+2025-01-03 20:50:39.266 +03:00 [INF] Цена для предмета AK-47 | Redline (Field-Tested) успешно получена.
+2025-01-03 20:50:39.324 +03:00 [INF] json content:{
+  "serverSettings": {
+    "Server": "5.144.179.242",
+    "Database": "STEAM",
+    "User": "Gleb_project",
+    "Password": "Gtybc001",
+    "Port": 4000
+  }
+}
+2025-01-03 20:50:39.330 +03:00 [ERR] Объект успешно десериализован: Httpclient.AppSettings.Teamplates.RootConfig
+2025-01-03 20:50:39.330 +03:00 [INF] deserializedObject T typeHttpclient.AppSettings.Teamplates.RootConfig
+2025-01-03 20:50:39.330 +03:00 [INF] JsonReaderForConfig:      Deserialized object: Httpclient.AppSettings.Teamplates.RootConfig
+2025-01-03 20:50:39.330 +03:00 [INF] ConnectionStringManager: settings:Httpclient.AppSettings.Teamplates.RootConfig
+2025-01-03 20:50:39.330 +03:00 [INF] Connecting to Steam with connection string {connectionString}

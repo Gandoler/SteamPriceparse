@@ -1,0 +1,54 @@
+2025-01-03 20:47:58.629 +03:00 [INF] Цена для предмета AK-47 | Redline (Field-Tested) успешно получена.
+2025-01-03 20:47:58.706 +03:00 [INF] File path - appsettings.json
+2025-01-03 20:47:58.707 +03:00 [ERR] Error reading JSON file: File not found: appsettings.json
+2025-01-03 20:47:58.707 +03:00 [ERR] In ConnectionStringManager File not found: appsettings.json
+2025-01-03 20:47:58.707 +03:00 [INF] ServerSettings: now in template:Httpclient.AppSettings.Teamplates.serverSetings
+2025-01-03 20:47:58.707 +03:00 [ERR] ServerSettings:One or more required fields are missing for the connection string.
+2025-01-03 20:47:58.707 +03:00 [INF] Connecting to Steam with connection string {connectionString}
+2025-01-03 20:47:58.708 +03:00 [INF] ServerSettings: now in template:Httpclient.AppSettings.Teamplates.serverSetings
+2025-01-03 20:47:58.708 +03:00 [ERR] ServerSettings:One or more required fields are missing for the connection string.
+2025-01-03 20:48:54.446 +03:00 [INF] Starting App
+#######################
+2025-01-03 20:48:55.070 +03:00 [INF] Цена для предмета AK-47 | Redline (Field-Tested) успешно получена.
+2025-01-03 20:48:55.139 +03:00 [INF] File path - appsettings.json
+2025-01-03 20:48:55.140 +03:00 [ERR] Error reading JSON file: File not found: appsettings.json
+2025-01-03 20:48:55.140 +03:00 [ERR] In ConnectionStringManager File not found: appsettings.json
+2025-01-03 20:48:55.140 +03:00 [INF] ServerSettings: now in template:Httpclient.AppSettings.Teamplates.serverSetings
+2025-01-03 20:48:55.140 +03:00 [ERR] ServerSettings:One or more required fields are missing for the connection string.
+2025-01-03 20:48:55.140 +03:00 [INF] Connecting to Steam with connection string {connectionString}
+2025-01-03 20:48:55.141 +03:00 [INF] ServerSettings: now in template:Httpclient.AppSettings.Teamplates.serverSetings
+2025-01-03 20:48:55.141 +03:00 [ERR] ServerSettings:One or more required fields are missing for the connection string.
+2025-01-03 20:49:45.221 +03:00 [INF] Starting App
+#######################
+2025-01-03 20:49:45.966 +03:00 [INF] Цена для предмета AK-47 | Redline (Field-Tested) успешно получена.
+2025-01-03 20:49:46.027 +03:00 [INF] json content:{
+  "serverSettings": {
+    "Server": "5.144.179.242",
+    "Database": "STEAM",
+    "User": "Gleb_project",
+    "Password": "Gtybc001",
+    "Port": 4000
+  }
+}
+2025-01-03 20:49:46.033 +03:00 [ERR] Объект успешно десериализован: Httpclient.AppSettings.Teamplates.RootConfig
+2025-01-03 20:49:46.033 +03:00 [INF] deserializedObject T typeHttpclient.AppSettings.Teamplates.RootConfig
+2025-01-03 20:49:46.033 +03:00 [INF] JsonReaderForConfig:      Deserialized object: Httpclient.AppSettings.Teamplates.RootConfig
+2025-01-03 20:49:46.033 +03:00 [INF] ConnectionStringManager: settings:Httpclient.AppSettings.Teamplates.RootConfig
+2025-01-03 20:49:46.034 +03:00 [INF] Connecting to Steam with connection string {connectionString}
+2025-01-03 20:50:17.005 +03:00 [INF] Starting App
+#######################
+2025-01-03 20:50:17.789 +03:00 [INF] Цена для предмета AK-47 | Redline (Field-Tested) успешно получена.
+2025-01-03 20:50:17.857 +03:00 [INF] json content:{
+  "serverSettings": {
+    "Server": "5.144.179.242",
+    "Database": "STEAM",
+    "User": "Gleb_project",
+    "Password": "Gtybc001",
+    "Port": 4000
+  }
+}
+2025-01-03 20:50:17.863 +03:00 [ERR] Объект успешно десериализован: Httpclient.AppSettings.Teamplates.RootConfig
+2025-01-03 20:50:17.863 +03:00 [INF] deserializedObject T typeHttpclient.AppSettings.Teamplates.RootConfig
+2025-01-03 20:50:17.863 +03:00 [INF] JsonReaderForConfig:      Deserialized object: Httpclient.AppSettings.Teamplates.RootConfig
+2025-01-03 20:50:17.863 +03:00 [INF] ConnectionStringManager: settings:Httpclient.AppSettings.Teamplates.RootConfig
+2025-01-03 20:50:17.864 +03:00 [INF] Connecting to Steam with connection string {connectionString}
