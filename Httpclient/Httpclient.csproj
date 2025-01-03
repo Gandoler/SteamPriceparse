@@ -14,8 +14,4 @@
       <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="DBTools\" />
-    </ItemGroup>
-
 </Project>
