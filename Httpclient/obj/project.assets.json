@@ -2960,6 +2960,7 @@
       "packagesPath": "/Users/gl.krutoimail.ru/.nuget/packages/",
       "outputPath": "/Users/gl.krutoimail.ru/RiderProjects/Solution1/Httpclient/obj/",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
         "/Users/gl.krutoimail.ru/.nuget/NuGet/NuGet.Config"
       ],
@@ -2984,8 +2985,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net9.0": {

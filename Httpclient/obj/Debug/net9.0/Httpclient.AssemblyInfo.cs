@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Httpclient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d4904ddbf42a0c13354e622c6c881fa6855b3f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b91a61c06f03be440b54598eeee06183a453150")]
 [assembly: System.Reflection.AssemblyProductAttribute("Httpclient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Httpclient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
