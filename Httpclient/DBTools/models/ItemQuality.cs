@@ -6,5 +6,6 @@ public enum ItemQuality
     WellWorn,          // После полевых испытаний
     FieldTested,       // Проверенное в боях
     MinimalWear,       // Немного поношенное
-    FactoryNew         // Прямо с завода
+    FactoryNew,         // Прямо с завода
+    Sticker
 }

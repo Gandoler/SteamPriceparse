@@ -20,21 +20,32 @@ public class DbContextSteam: DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        
         modelBuilder.Entity<SteamItem>(entity =>
         {
-            entity.ToTable("SteamItems"); // Название таблицы
+            entity.ToTable("SteamItems");
             entity.Property(e => e.ItemType).IsRequired().HasMaxLength(50);
             entity.Property(e => e.ItemName).IsRequired().HasMaxLength(100);
             entity.Property(e => e.Quality)
                 .IsRequired()
                 .HasConversion(
-                    v => v.ToString(), // Сохранение как строка
-                    v => (ItemQuality)Enum.Parse(typeof(ItemQuality), v)); // Чтение из строки
-  
-            
+                    v => v.ToString(),
+                    v => (ItemQuality)Enum.Parse(typeof(ItemQuality), v));
+        
+            entity.HasOne(si => si.PriceInfo) // Один SteamItem
+                .WithOne(pi => pi.SteamItem) // Связан с одним ItemPriceInfo
+                .HasForeignKey<ItemPriceInfo>(pi => pi.ItemId) // Внешний ключ
+                .OnDelete(DeleteBehavior.Cascade); // Каскадное удаление
+        });
+
+        modelBuilder.Entity<ItemPriceInfo>(entity =>
+        {
+            entity.ToTable("ItemPriceInfos");
+            entity.Property(e => e.MinPrice).IsRequired().HasColumnType("decimal(18, 2)");
+            entity.Property(e => e.SalesVolume).IsRequired();
+            entity.Property(e => e.AvgPrice).IsRequired().HasColumnType("decimal(18, 2)");
         });
     }
 
     public DbSet<SteamItem> Items { get; set; }
+    public DbSet<ItemPriceInfo> ItemPriceInfos { get; set; }
 }

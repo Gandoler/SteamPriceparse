@@ -21,6 +21,34 @@ namespace Httpclient.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
+            modelBuilder.Entity("Dbtools.models.ItemPriceInfo", b =>
+                {
+                    b.Property<int>("PriceInfoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("PriceInfoId"));
+
+                    b.Property<decimal>("AvgPrice")
+                        .HasColumnType("decimal(18, 2)");
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("MinPrice")
+                        .HasColumnType("decimal(18, 2)");
+
+                    b.Property<int>("SalesVolume")
+                        .HasColumnType("int");
+
+                    b.HasKey("PriceInfoId");
+
+                    b.HasIndex("ItemId")
+                        .IsUnique();
+
+                    b.ToTable("ItemPriceInfos", (string)null);
+                });
+
             modelBuilder.Entity("Dbtools.models.SteamItem", b =>
                 {
                     b.Property<int>("ItemId")
@@ -46,6 +74,23 @@ namespace Httpclient.Migrations
                     b.HasKey("ItemId");
 
                     b.ToTable("SteamItems", (string)null);
+                });
+
+            modelBuilder.Entity("Dbtools.models.ItemPriceInfo", b =>
+                {
+                    b.HasOne("Dbtools.models.SteamItem", "SteamItem")
+                        .WithOne("PriceInfo")
+                        .HasForeignKey("Dbtools.models.ItemPriceInfo", "ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("SteamItem");
+                });
+
+            modelBuilder.Entity("Dbtools.models.SteamItem", b =>
+                {
+                    b.Navigation("PriceInfo")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

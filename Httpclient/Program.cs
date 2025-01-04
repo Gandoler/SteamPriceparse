@@ -41,7 +41,7 @@ public class Program
 
         using (var db = new DbContextSteam())
         {
-            // Убедись, что база данных создана
+           
             await db.Database.EnsureCreatedAsync();
         }
 

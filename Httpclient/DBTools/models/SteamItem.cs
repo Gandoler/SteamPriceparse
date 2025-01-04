@@ -16,4 +16,6 @@ public class SteamItem
     
     [Required]
     public ItemQuality Quality { get; set; } 
+    
+    public ItemPriceInfo PriceInfo { get; set; } = null!;
 }
